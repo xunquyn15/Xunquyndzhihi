@@ -32,8 +32,8 @@ repeat wait() until game:IsLoaded()
 
 -- 🪟 Cửa sổ chính
 local Window = Fluent:CreateWindow({
-	Title = "💀Mất Quyền Truy Cập  =}",         -- 👈 đổi thành tên script của bạn
-	SubTitle = "Xqvp💎😍",              -- 👈 đổi mô tả phụ
+	Title = "💀Mất Quyền Truy Cập ",         -- 👈 đổi thành tên script của bạn
+	SubTitle = "XpHub",              -- 👈 đổi mô tả phụ
 	TabWidth = 157,
 	Size = UDim2.fromOffset(450, 300),
 	Acrylic = true,
@@ -56,9 +56,9 @@ local Tabs = {
 ------------------------------------------------
 Tabs.Main0:AddButton({
 	Title = "@xun.quyn15",              -- 👈 tên nút
-	Description = "FL tim ❤ để nhận được nhiều video hay hơn ",-- 👈 mô tả nút
+	Description = "Nhấn vào để sao chép link Tik Tok  ",-- 👈 mô tả nút
 	Callback = function()
-		setclipboard("https://www.tiktok.com/@jannie3342?_t=ZS-90QsJQ5j0NO&_r=1")  -- 👈 link sao chép
+		setclipboard("https://www.tiktok.com/@xun.quyn15?_r=1&_t=ZS-91pwZ8A7SQa ")  -- 👈 link sao chép
 	end
 })
 
@@ -66,7 +66,7 @@ Tabs.Main0:AddButton({
 	Title = "tiktok",
 	Description = "fl tiktok để biết thêm nhiều script",
 	Callback = function()
-		setclipboard("https://www.tiktok.com/@b.yt03?_t=ZS-90QsHmSjaiu&_r=1")
+		setclipboard("https://www.tiktok.com/@xun.quyn15?_r=1&_t=ZS-91pwZ8A7SQa ")
 	end
 })
 
@@ -74,6 +74,29 @@ Tabs.Main0:AddButton({
 -- TAB 2: Ví dụ thêm script
 ------------------------------------------------
 Tabs.Main1:AddButton({
+	Title = "MQKS💀",                         
+   -- =================================
+   -- MENU 1: FARM MONEY
+   -- =================================
+   local moneyTab = Window: MakeTab({
+    Name = "FARM MONEY",
+    Icon = "rbxassetid://6023426923"
+})
+     money Tab: AddToggle({
+     Name = "Auto Farm Money",
+     Default = false,
+     Callback = function(x)
+   AutoFarmMoney = x
+     if x then
+      task.spawn (FarmMoney)
+
+      end
+
+   end
+
+}) 
+
+Tabs.Main2:AddButton({
 	Title = "MQKS💀",                             -- 👈 tên nút hiển thị
 	Description = "script này ngon á đủ chức năng cả😃",-- 👈 mô tả
 	Callback = function()
@@ -84,3 +107,27 @@ Tabs.Main1:AddButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))() -- 👈 link script tải
 	end
 })
+
+Tabs.Main3:AddButton({
+	Title = "MQKS💀",                         
+   -- =================================
+   -- MENU 1: FARM MONEY
+   -- =================================
+   local moneyTab = Window: MakeTab({
+    Name = "FARM MONEY",
+    Icon = "rbxassetid://6023426923"
+})
+     money Tab: AddToggle({
+     Name = "Auto Farm Money",
+     Default = false,
+     Callback = function(x)
+   AutoFarmMoney = x
+     if x then
+      task.spawn (FarmMoney)
+
+      end
+
+   end
+
+}) 
+})  
